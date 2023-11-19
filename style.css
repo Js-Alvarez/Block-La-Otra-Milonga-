@@ -10,7 +10,8 @@ body{
     font-size: 16px;
 }
 .contenedor{
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     margin: 20px auto;  
     overflow: hidden;
 }
@@ -45,7 +46,7 @@ header nav ul li a:hover{
 }
 .main{
     background:#fff;
-    width: 700px;
+    width: 70%;
     float: left;
 }
 
@@ -74,7 +75,7 @@ aside{
     background: #161f26;
     color:#fff;
     padding:20px;
-    width: 300px;
+    width: 30%;
     float: left;
 }
 
@@ -112,10 +113,26 @@ aside .widget p{
 }
 
 footer{
-    width: 700px;
+    width: 70%;
     clear: both; /*Ayuda a que las cajas del main y el aside esten una all ado del otro y el footer abajo*/
     background: black;
     padding: 15px 0;
     color: #fff;
     text-align: center;
+}
+@media screen and (max-width:800px) {
+    body{
+        background: black;
+    }
+
+    .main {
+        width: 100%;
+    } 
+
+    aside{
+        width: 100%;
+    }
+    footer{
+        width: 100;
+    }
 }
