@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* tamaño del contenedor forza a la medida que queremos*/
+}
+
+body{
+    background: #4a465b;
+    font-family: Arial,Sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 1000px;
+    margin: 20px auto;  
+    overflow: hidden;
+}
+
+header{
+    background: #fff;    
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float:left; /*display:inline-block tambien pueder ser*/
+
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: black;
+}
+header nav ul li a:hover{
+    background: black;
+    color: #fff;
+}
+.main{
+    background:#fff;
+    width: 700px;
+    float: left;
+}
+
+.main .imagen{
+    width: 100%;
+}
+
+.main .imagen img{
+    width:100% ;
+    vertical-align: top;
+}
+
+.main .post{
+    padding: 40px;
+}
+
+.main .post article h2{
+    margin-bottom: 20px ;
+    color: #424242;
+}
+.main .post article p{
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+aside{
+    background: #161f26;
+    color:#fff;
+    padding:20px;
+    width: 300px;
+    float: left;
+}
+
+aside .widget{
+    margin-bottom: 20px;
+}
+
+aside .widget .titulo{
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+    margin-bottom: 10px;
+}
+
+aside .widget ul{
+    list-style: none;
+}
+aside .widget ul li{
+    border-bottom: 1px solid rgba(255, 255,255,0.2);
+}
+
+aside .widget ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+
+aside .widget ul li a:hover{
+    color: #8f8f8f;
+}
+
+
+aside .widget p{
+    line-height: 27px;
+}
+
+footer{
+    width: 700px;
+    clear: both; /*Ayuda a que las cajas del main y el aside esten una all ado del otro y el footer abajo*/
+    background: black;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+}
